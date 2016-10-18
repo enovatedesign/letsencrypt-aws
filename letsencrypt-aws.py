@@ -94,9 +94,9 @@ class ELBCertificate(object):
             if listener["Port"] == self.elb_port
         ]
 
-        self.elb_listner_arn = elb_listener["ListenerArn"];
+        self.elb_listner_arn = elb_listener["ListenerArn"]
 
-        elb_listener_certificates = elb_listener["Certificates"];
+        elb_listener_certificates = elb_listener["Certificates"]
         if not elb_listener_certificates:
             raise ValueError(
                 "A certificate must already be configured for the ELB"
